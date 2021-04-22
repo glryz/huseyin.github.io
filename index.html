@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- external css örneği (file.css dosyamız olsaydı etkisini görecektik)--> 
+	<link rel="stylesheet" type="text/css" href="file.css"> 
+	<!-- hatırlayalım, link tag'ının closing tag'ı yoktu -->
+	<style>   
+		body {
+			background-color: #4ea9ea;
+		}
+		p {
+			color: #690979;
+		}
+	</style>
+</head>
+<body>
+<!--ordered list-->
+	<p style="color:blue;">ITF Core Team</p> <!-- inline styling -->
+	<ol>
+		<li>michael</li>
+		<li>robert</li>
+		<li>bruce</li>
+		<li>sergio</li>
+	</ol>
+	<p>ITF Core Team</p>
+	<ol reversed="True">
+		<li>michael</li>
+		<li>robert</li>
+		<li>bruce</li>
+		<li>sergio</li>
+	</ol>
+
+
+<!--unordered list-->
+<p>ITF Core Team</p>
+	<ul type="cicle">
+		<li>michael</li>
+		<li>robert</li>
+		<li>bruce</li>
+		<li>sergio</li>
+	</ul>
+	<ul type="square">
+		<li>michael</li>
+		<li>robert</li>
+		<li>bruce</li>
+		<li>sergio</li>
+	</ul>
+
+<!--description list-->
+<p>Team missions</p>
+	<d1>
+		<dt>michael</dt>
+			<dd>-team lead</dd>
+		<dt>robert</dt>
+			<dd>-acad.coord.</dd>
+		<dt>bruce</dt>
+			<dd>-tech.coord.</dd>
+	</d1>
+
+
+<!-- HTML Nested List -->
+	<p>List of Countries with thier capital</p>
+	<ol>
+    	<li>Türkiye
+        	<ul>
+         		<li>Ankara</li>
+         			<dd>-karal iklim
+        	</ul>
+    	</li>
+    	<li>Greece
+        	<ul>
+            	<li>Athens</li>
+					<dt>bu açıklama dt tag'i ile yapıldı</dt>
+					<dd>bu açıklama dd tag'i ile yapıldı</dd>
+    	</li>
+    	<li>Bulgaria
+        	<ul>
+            	<li>Sofia</li>
+        	</ul>
+    	</li>
+    	<li>RRomania
+        	<ul>
+            	<li>Bucharest</li>
+        	</ul>
+    	</li>
+    	<li>Italy
+        	<ul>
+            	<li>Roma</li>
+        	</ul>
+    	</li>
+    	<li>France
+        	<ul>
+            	<li>Paris</li>
+                        <dd>-Beatifull City</dd>
+            </ul>
+    	</li>
+	</ol>
+	<br>
+
+	<!-- table without border -->
+	<table>
+		<tr align="left">
+			<th>first name</th>
+			<th>last name</th>
+			<th>mission</th>
+		</tr>
+		<tr>
+			<td>michael</td>
+			<td>adams</td>
+			<td>team lead</td>
+		</tr>
+		<tr>
+			<td>sergio</td>
+			<td>taco</td>
+			<td>personal coord.</td>
+		</tr>
+	</table>
+	<br>
+
+	<!-- table with border -->
+	<table border="5">
+		<tr align="left">
+			<th>first name</th>
+			<th>last name</th>
+			<th>mission</th>
+		</tr>
+		<tr align="left">
+			<td>michael</td>
+			<td align="right">adams</td>
+			<td>team lead</td>
+		</tr>
+		<tr align="right">
+			<td>sergio</td>
+			<td>taco</td>
+			<td>personal coord.</td>
+		</tr>
+		<br>
+
+<!-- table with colspan-->
+	<table border="3">
+		<tr>
+			<th>name</th>
+			<th colspan="3">mobile no</th>
+		</tr>
+		<tr>
+			<td>sergio</td>
+			<td>123454678</td>
+			<td>876543212</td>
+			<td>878374675</td>
+		</tr>
+		
+
+	</table>
+	<br>
+
+
+<!-- table with rowspan-->
+	<table border="3">
+		<tr>
+			<th>name</th>
+			<td>sergio</td>
+		</tr>
+		<tr>
+			<th rowspan="3">mobile no</th>
+			<td>123454678</td>
+		</tr>
+		<tr>
+			<td>234254563</td>
+		</tr>
+		<tr>
+			<td>624523636</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	<img src="https://clarusway.com/wp-content/uploads/2021/03/design.jpg" alt="Clarusway" width="100%" height="max" border="4px">
+	<br>
+	<br>
+	<br>
+	<!--http dosyası desktopta image ise desktoptaki images klasörünün altında ve relative path kullanırsak-->
+	<img src="images/design.jpg" alt="Clarusway" width="50%" border="2px">
+	<br>
+	<br>
+	<br>
+	<!--absolute path kullanırsak{img dosyasının üzerine sağ tıkla-özellikler-güvenlik-path'i kopyala-->
+	<img src="C:\Users\hüseyin\Desktop\images\design.jpg" alt="Clarusway" width="50%" border="2px">
+	<br>
+	<br>
+	<br>
+	<!-- link oluşturma-->
+	<a href="https://www.clarusway.com" target="_blank">Clarusway.com</a>
+	<br>
+	<br>
+	<br>
+	<!-- image as a link-->
+	<a href="https://www.clarusway.com" target="blank"><img src="images/design.jpg" alt="Clarusway" width="50%" border="2px"></a>
+	<br>
+	<br>
+	<br>
+	<a href="mailto:hsynglryz2016@gmail.com" target="blank">Send mail to Hüseyin Güleryüz</a>
+	
+	<br>
+	<br>
+	<br>
+	<!--button as a link -->
+	<button onclick="document.location='https://lms.clarusway.com'">Clarusway LMS</button>
+	<br>
+	<br>
+	<br>
+	<!-- link titles.. mouse ile yazının üzerine geldiğinde title beliriyor-->
+	<a href="https://lms.clarusway.com" title="Go to Clarusway LMS">Try Clarusway LMS for further e-learning</a>
+
+
+</body>
+</html>
